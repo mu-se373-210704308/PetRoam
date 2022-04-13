@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetRoam">
         <activity
+            android:name=".register_page"
+            android:exported="false" />
+        <activity
             android:name=".login_page"
             android:exported="false" />
         <activity
