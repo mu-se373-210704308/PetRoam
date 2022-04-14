@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        // login ekranına götüren started butonu.
         val button: Button = findViewById(R.id.startedbutton)
         button.setOnClickListener {
             val intent = Intent(this, login_page::class.java)

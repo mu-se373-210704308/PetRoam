@@ -10,6 +10,7 @@ class login_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
 
+        // register ekranına götüren register butonu.
         val button: Button = findViewById(R.id.registerbutton)
         button.setOnClickListener {
             val intent = Intent(this, register_page::class.java)
