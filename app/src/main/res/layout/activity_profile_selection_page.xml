@@ -22,25 +22,74 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/petwalkerimage"
-        android:layout_width="163dp"
-        android:layout_height="271dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toStartOf="@+id/petownerimage"
+        android:id="@+id/petownerpic"
+        android:layout_width="176dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/petwalkerpic"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/petowner" />
+
+    <ImageView
+        android:id="@+id/petwalkerpic"
+        android:layout_width="176dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/petwalker" />
 
-    <ImageView
-        android:id="@+id/petownerimage"
-        android:layout_width="165dp"
-        android:layout_height="189dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="32dp"
+    <Button
+        android:id="@+id/poBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="17dp"
+        android:text="PET OWNER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petownerpic" />
+
+    <Button
+        android:id="@+id/pwBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="49dp"
+        android:text="PET WALKER"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/petwalkerimage"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/petowner" />
+        app:layout_constraintTop_toBottomOf="@+id/petwalkerpic" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="170dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:text=" • Pet owners will be able to create an advert.\n
+• They will be able to see recent adverts and completed tours.\n
+• They will be able to see and rate Pet walkers profile.\n
+• They will be able to see Pet walkers' current location on the tour.\n
+• They will be able to send a message to pet owner."
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poBtn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="170dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="24dp"
+        android:text=" • Pet walkers will be able to see adverts.\n
+• They will be able to apply to these adverts.\n
+• They will be able to see Pet Owners profile.\n
+• They will be able to send a message to pet owner."
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwBtn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

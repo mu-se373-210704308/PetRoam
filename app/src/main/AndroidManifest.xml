@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetRoam">
         <activity
+            android:name=".petowner_advert"
+            android:exported="false" />
+        <activity
+            android:name=".petowner_profile"
+            android:exported="false" />
+        <activity
+            android:name=".petwalker_profile"
+            android:exported="false" />
+        <activity
             android:name=".profile_selection_page"
             android:exported="false" />
         <activity

@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/darkpurple">
+    android:background="@drawable/backgroundpic"
+    android:fillViewport = "true"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="182dp"
         android:layout_height="185dp"
         android:layout_marginStart="114dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="115dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="114dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo2" />
 
     <TextView
         android:id="@+id/welcomeText"
@@ -27,7 +28,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="124dp"
         android:text="W E L C O M E !"
-        android:textColor="@color/white"
+        android:textColor="@color/darkpurple"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,6 +44,7 @@
         android:layout_marginEnd="85dp"
         android:text="The best in petwalker recruitment."
         android:textSize="16sp"
+        android:textColor="@color/darkpurple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
@@ -54,9 +56,10 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="18dp"
-        android:text="Post adverts, rate and comment petwalker's profile, see current location and more"
+        android:text="Post adverts, rate and comment, see current location and more..."
         android:textAlignment="center"
         android:textSize="16sp"
+        android:textColor="@color/darkpurple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -69,7 +72,7 @@
         android:layout_marginTop="47dp"
         android:layout_marginEnd="114dp"
         android:text="Let's Get Started"
-        android:background="@color/lightpurple"
+        android:background="@drawable/startedbuttonbackground"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
